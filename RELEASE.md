@@ -28,7 +28,7 @@
 1. Create a new release in Github
     - Click the [Create a new release](https://github.com/julianopiovezan/dbt-mysql-adapter/releases/new) link on the project homepage in GitHub
     - Choose the created tag
-    - Type `dbt-mysql-adapter {semantic_version}` as the "release title" (e.g. `dbt-mysql-adapter {semantic_version}`)
+    - Type `dbt-mysql-adapter {semantic_version}` as the "release title" (e.g. `dbt-mysql-adapter 0.19.0`)
     - For pre-releases:
       - leave the description blank
       - Tick the "this is a pre-release" checkbox
@@ -44,7 +44,7 @@
     - `POETRY_HTTP_BASIC_TEST_PYPI_USERNAME=__token__  POETRY_HTTP_BASIC_TEST_PYPI_PASSWORD=<token> poetry publish --repository test-pypi`
     - Check at https://test.pypi.org/project/dbt-mysql-adapter/
 1. Deploy to PyPi
-    - `POETRY_HTTP_BASIC_PYPI_USERNAME=__token__  POETRY_HTTP_BASIC_PYPI_PASSWORD=<token> poetry publish --repository pypi`
+    - `POETRY_HTTP_BASIC_PYPI_USERNAME=__token__  POETRY_HTTP_BASIC_PYPI_PASSWORD=<token> poetry publish`
     - Confirm at https://pypi.org/project/dbt-mysql-adapter/
 
 PyPi recognizes [pre-release versioning conventions](https://packaging.python.org/guides/distributing-packages-using-setuptools/#pre-release-versioning) and will label "pre-releases" as-such.
